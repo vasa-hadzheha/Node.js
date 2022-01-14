@@ -1,0 +1,22 @@
+{
+    "name": "mkr2",
+    "version": "1.0.0",
+    "description": "Variant_7",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "coverage": "jest --coverage",
+        "start": "nodemon src/index.js"
+    },
+    "author": "Vasyl Hadzheha",
+    "license": "ISC",
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "jest": "^27.4.5",
+        "supertest": "^6.1.6"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
