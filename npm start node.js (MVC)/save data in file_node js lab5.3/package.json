@@ -1,0 +1,17 @@
+{
+  "name": "mvc_model_lab5.2",
+  "version": "1.0.0",
+  "description": "refactoring to mvc model",
+  "main": "index.js",
+  "scripts": {
+    "nodemon": "nodemon src/index.js"
+  },
+  "author": "Vasyl Hadzheha",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

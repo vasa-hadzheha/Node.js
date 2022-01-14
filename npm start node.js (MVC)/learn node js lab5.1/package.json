@@ -1,0 +1,17 @@
+{
+  "name": "testing_node_1",
+  "version": "1.0.0",
+  "description": "test node js first time",
+  "main": "test.js",
+  "scripts": {
+    "nodemon": "nodemon test.js"
+  },
+  "author": "Vasyl Hadzheha",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
