@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/for_API.css">
+    <title>Technical Information</title>
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <div style="text-align: center" class="body-inner-wrapper">
+            <section class="hero-main">
+                <br>
+                <h1>Інформація для розробників</h1>
+                <br>
+                <p>
+                    Для роботи з API зручно використовувати платформи такі як <a rel="nofollow"
+                        href="https://www.postman.com/">Postman</a> або аналоги.
+                    У цій документації всі приклади наведені з використанням Postman.
+                </p>
+                <br>
+                <img src="https://guide.diia.gov.ua/static/img/api_docs/post_head.png">
+                <br>
+                <h1> Ознайомтеся з короткою інструкцією як користуватись вашими АPI </h1>
+                <br>
+                <h3> GET: </h3>
+                <br>
+                <p>
+                    Для того, щоб отримати список всіх машин - надішліть GET запит на адресу http://localhost:3000/cars
+                </p>
+                <br>
+                <img src="/screen/getAll.png">
+                <br>
+                <p>
+                    Для того, щоб отримати список всіх машин зя якоюсь умовою, в даному прикладі ми шукаємо машину
+                    певної марки - надішліть GET запит на адресу http://localhost:3000/cars/query?mark="марка машини"
+                </p>
+                <br>
+                <img src="/screen/queryOneElement.png">
+
+                <br><br>
+
+                <p>
+                    Для того, щоб отримати список всіх машин за двома і більше умов необхідно надіслати
+                    GET запит на адресу http://localhost:3000/cars/query?mark=марка машини&num=номер машини
+                </p>
+                <br>
+                <img src="/screen/Query_mark&num.png">
+
+                <br>
+                <br>
+                <h3> POST: </h3>
+                <br>
+
+                <p>
+                    Для того, щоб додати нову машину - надішліть POST запит на адресу http://localhost:3000/cars, у тілі
+                    запиту в форматі JSON повинен бути опис машини. Розглдаються такі поля: 1) owner поле рядкового типу
+                    (string),
+                    містить ім'я та фамілію власника машини; 2) mark поле рядкового типу (string), містить марку машини;
+                    3) number поле рядкового типу (string),
+                    містить номер машини; 4) colour поле рядкового типу (string),
+                    містить колір машини.
+                </p>
+                <br>
+                <img src="/screen/postCar.png">
+
+                <br>
+                <br>
+                <h3> PUTCH: </h3>
+                <br>
+
+                <p>
+                    Для того, щоб обновити дані конкретної машини - надішліть PUTCH запит на адресу
+                    http://localhost:3000/cars/("id number"), у тілі
+                    запиту в форматі JSON повинні бути описані поля машини, які будуть змінені. Розглдаються такі
+                    можливі поля для виправлення або обновлення інформації: 1) owner поле рядкового типу
+                    (string),
+                    містить ім'я та фамілію власника машини; 2) mark поле рядкового типу (string), містить марку машини;
+                    3) number поле рядкового типу (string),
+                    містить номер машини; 4) colour поле рядкового типу (string),
+                    містить колір машини.
+                </p>
+                <br>
+                <img src="/screen/putch.png">
+
+                <br>
+                <br>
+                <h3> DELETE: </h3>
+                <br>
+
+                <p>
+                    Для того, щоб видалити конкретну машину - надішліть DELETE запит на адресу
+                    http://localhost:3000/cars/("id number").
+                </p>
+                <br>
+                <img src="/screen/delete.png">
+
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>

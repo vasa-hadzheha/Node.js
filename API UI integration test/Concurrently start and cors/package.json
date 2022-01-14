@@ -1,0 +1,22 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Rest api",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+        "frontend": "cd frontend && npm start",
+        "backend": "cd backend && npm start",
+        "installall": "concurrently \"cd frontend && npm init\" \"cd backend && npm init\""
+  },
+  "keywords": [
+    "CRUD",
+    "exmple"
+  ],
+  "author": "Vasyl Hadzheha",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.4.0"
+  }
+}

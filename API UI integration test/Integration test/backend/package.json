@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "api"
+  ],
+  "author": "Hadzheha Vasyl",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "npm": "^8.3.0",
+    "sequelize": "^6.12.0-beta.2",
+    "sqlite3": "^5.0.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*"
+    ]
+  }
+}
